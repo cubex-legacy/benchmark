@@ -1,4 +1,4 @@
-benchmark
-=========
+Cubex Benchmark
+===
 
-Benchmark Library
+Cubex Performance Benchmarking
