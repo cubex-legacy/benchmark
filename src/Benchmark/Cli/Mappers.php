@@ -15,7 +15,7 @@ use Cubex\Mapper\Database\RecordMapper;
 class Mappers extends BenchmarkCommand
 {
   /**
-   * Mapper Type (Data|Record|Cassandra)
+   * Mapper Type (No|Data|Record|Cassandra)
    * @valuerequired
    */
   public $mapperType = 'Data';
@@ -28,6 +28,11 @@ class Mappers extends BenchmarkCommand
     $x->property = "anothervalue";
     return $x->property;
   }
+}
+
+class TestNoMapper
+{
+  public $property;
 }
 
 class TestDataMapper extends DataMapper

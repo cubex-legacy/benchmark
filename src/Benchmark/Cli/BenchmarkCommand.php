@@ -66,9 +66,9 @@ abstract class BenchmarkCommand extends CliCommand
       $format,
       "Total",
       (number_format(($total['avgtest'] / $total['runs'] * 1000), 3) . ' ms'),
-      (number_format(($total['runtime'] / $total['runs'] * 1000), 3) . ' ms'),
+      (number_format(($total['runtime'] * 1000), 3) . ' ms'),
       ($total['avgtest'] / $total['runs']),
-      ($total['runtime'] / $total['runs'])
+      ($total['runtime'])
     );
   }
 
