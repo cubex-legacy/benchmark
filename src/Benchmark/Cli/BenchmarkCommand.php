@@ -70,6 +70,10 @@ abstract class BenchmarkCommand extends CliCommand
       ($total['avgtest'] / $total['runs']),
       ($total['runtime'])
     );
+
+    echo "\n";
+    echo "Total Tests Run: " . number_format($this->runs * $this->perRun, 0);
+    echo "\n";
   }
 
   abstract public function runTest();
