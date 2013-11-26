@@ -13,9 +13,9 @@
     }
   ],
   "require":           {
-    "php":            ">=5.4.0",
-    "cubex/cubex":    "*",
-    "cubex/cassandra":    "*"
+    "php":             ">=5.4.0",
+    "cubex/cubex":     "*",
+    "cubex/cassandra": "*"
   },
   "autoload":          {
     "psr-0": {

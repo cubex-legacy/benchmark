@@ -74,7 +74,13 @@ abstract class BenchmarkCommand extends CliCommand
     echo "\n";
     echo "Total Tests Run: " . number_format($this->runs * $this->perRun, 0);
     echo "\n";
+
+    $this->shutdown();
   }
 
   abstract public function runTest();
+
+  public function shutdown()
+  {
+  }
 }
